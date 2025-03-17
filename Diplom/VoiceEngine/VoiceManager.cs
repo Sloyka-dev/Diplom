@@ -15,20 +15,15 @@ public static class VoiceManager
         switch (speechRecognitionResult.Reason)
         {
             case ResultReason.RecognizedSpeech:
-                MessageBox.Show($"RECOGNIZED: Text={speechRecognitionResult.Text}");
-                break;
-            case ResultReason.NoMatch:
-                MessageBox.Show($"NOMATCH: Speech could not be recognized.");
+                VoiceController.SuccessGetText(speechRecognitionResult.Text);
                 break;
             case ResultReason.Canceled:
                 var cancellation = CancellationDetails.FromResult(speechRecognitionResult);
-                MessageBox.Show($"CANCELED: Reason={cancellation.Reason}");
+                VoiceController.Cancel(cancellation.Reason.ToString());
 
                 if (cancellation.Reason == CancellationReason.Error)
                 {
-                    MessageBox.Show($"CANCELED: ErrorCode={cancellation.ErrorCode}");
-                    MessageBox.Show($"CANCELED: ErrorDetails={cancellation.ErrorDetails}");
-                    MessageBox.Show($"CANCELED: Did you set the speech resource key and region values?");
+                    VoiceController.Error(cancellation.ErrorCode.ToString(), cancellation.ErrorDetails);
                 }
                 break;
         }
@@ -39,20 +34,16 @@ public static class VoiceManager
         switch (speechSynthesisResult.Reason)
         {
             case ResultReason.SynthesizingAudioCompleted:
-                MessageBox.Show($"Speech synthesized for text: [{text}]");
+                VoiceController.SuccessReadText(text);
                 break;
             case ResultReason.Canceled:
                 var cancellation = SpeechSynthesisCancellationDetails.FromResult(speechSynthesisResult);
-                MessageBox.Show($"CANCELED: Reason={cancellation.Reason}");
+                VoiceController.Cancel(cancellation.Reason.ToString());
 
                 if (cancellation.Reason == CancellationReason.Error)
                 {
-                    MessageBox.Show($"CANCELED: ErrorCode={cancellation.ErrorCode}");
-                    MessageBox.Show($"CANCELED: ErrorDetails=[{cancellation.ErrorDetails}]");
-                    MessageBox.Show($"CANCELED: Did you set the speech resource key and region values?");
+                    VoiceController.Error(cancellation.ErrorCode.ToString(), cancellation.ErrorDetails);
                 }
-                break;
-            default:
                 break;
         }
     }
@@ -91,7 +82,6 @@ public static class VoiceManager
         using var audioConfig = AudioConfig.FromDefaultMicrophoneInput();
         using var speechRecognizer = new SpeechRecognizer(speechConfig, audioConfig);
 
-        MessageBox.Show("Speak into your microphone.");
         var speechRecognitionResult = await speechRecognizer.RecognizeOnceAsync();
         OutputSpeechRecognitionResult(speechRecognitionResult);
 

@@ -21,16 +21,7 @@ namespace Diplom
         {
             InitializeComponent();
 
-            Task.Run(async () =>
-            {
-
-                await Task.Delay(1000);
-                await VoiceManager.TextToSpeechAsync("В этом кратком руководстве для синтеза короткого блока введенного вами текста используется операция SpeakTextAsync. Вы также можете использовать длинный текст из файла и получить более точное управление стилями голоса, просодией и другими параметрами.");
-
-                await Task.Delay(3000);
-                await VoiceManager.SpeechToTextAsync();
-
-            });
+            VoiceController.Init();
 
         }
     }
