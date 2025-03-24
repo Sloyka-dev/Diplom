@@ -17,9 +17,13 @@ public class VoiceContext
     {
 
         Start,
+        StartSum,
         Help,
+        HelpSum,
         StageCountrySuccess,
-        StageCountryError
+        StageCountrySuccessSum,
+        StageCountryError,
+        StageCountryErrorSum,
 
     }
 

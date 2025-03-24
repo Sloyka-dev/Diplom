@@ -15,6 +15,7 @@ public static class VoiceManager
         switch (speechRecognitionResult.Reason)
         {
             case ResultReason.RecognizedSpeech:
+                speechSynthesizer?.StopSpeakingAsync();
                 VoiceController.SuccessGetText(speechRecognitionResult.Text);
                 break;
             case ResultReason.Canceled:
@@ -27,6 +28,9 @@ public static class VoiceManager
                 }
                 break;
         }
+
+        SpeechToTextAsync();
+
     }
 
     static void OutputSpeechSynthesisResult(SpeechSynthesisResult speechSynthesisResult, string text)
@@ -48,6 +52,8 @@ public static class VoiceManager
         }
     }
 
+    static SpeechSynthesizer? speechSynthesizer;
+
     public async static Task TextToSpeechAsync(string text)
     {
 
@@ -65,7 +71,7 @@ public static class VoiceManager
          * 
          */
 
-        using (var speechSynthesizer = new SpeechSynthesizer(speechConfig))
+        using (speechSynthesizer = new SpeechSynthesizer(speechConfig))
         {
             var speechSynthesisResult = await speechSynthesizer.SpeakTextAsync(text);
             OutputSpeechSynthesisResult(speechSynthesisResult, text);

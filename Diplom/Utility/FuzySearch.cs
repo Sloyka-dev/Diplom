@@ -9,20 +9,45 @@ namespace Diplom.Utility;
 internal class FuzySearch
 {
 
-    public static List<string> FuzzySearchList(List<string> data, string searchTerm, int maxDistance = 3)
+    public static string? FuzzySearchWordInList(List<string> data, string searchTerm, int maxDistance = 3)
     {
-        List<string> results = new List<string>();
+
+        string? res = null;
+        int min = maxDistance + 1;
 
         foreach (var item in data)
         {
             int distance = LevenshteinDistance(item, searchTerm);
             if (distance <= maxDistance)
             {
-                results.Add(item);
+                
+                if(distance < min)
+                {
+
+                    res = item;
+                    min = distance;
+
+                }
+
             }
         }
 
-        return results;
+        return res;
+    }
+
+    public static bool FuzzySearchList(List<string> data, string searchTerm, int maxDistance = 3)
+    {
+
+        foreach (var item in data)
+        {
+            int distance = LevenshteinDistance(item, searchTerm);
+            if (distance <= maxDistance)
+            {
+                return true;
+            }
+        }
+
+        return false;
     }
 
     public static bool FuzzySearch(string data, string searchTerm, int maxDistance = 3)

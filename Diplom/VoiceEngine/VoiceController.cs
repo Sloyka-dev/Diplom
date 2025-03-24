@@ -10,43 +10,63 @@ static internal class VoiceController
     public static void SuccessGetText(string Text)
     {
 
-        switch (context.Stage)
+        if (FuzySearch.FuzzySearchList(VoiceConst.SkipList, Text))
         {
 
-            case 0:
+            switch (context.Stage)
+            {
 
-                if (FuzySearch.FuzzySearch("помощь", Text.ToLower()))
-                {
+                case VoiceContext.ContextType.Start:
+                    context.Stage = VoiceContext.ContextType.StartSum;
+                    break;
 
-                    //...
-                    context.Stage = VoiceContext.ContextType.Help;
-                    StartDialog();
+                case VoiceContext.ContextType.Help:
+                    context.Stage = VoiceContext.ContextType.HelpSum;
+                    break;
 
-                }
-                else
-                {
+                case VoiceContext.ContextType.StageCountrySuccess:
+                    context.Stage = VoiceContext.ContextType.StageCountrySuccessSum;
+                    break;
 
-                    var res = FuzySearch.FuzzySearchList(new List<string>() { "турция", "египет" }, Text.ToLower());
-                    if (res.Count != 0)
-                    {
+                case VoiceContext.ContextType.StageCountryError:
+                    context.Stage = VoiceContext.ContextType.StageCountryErrorSum;
+                    break;
+            }
 
-                        context.Country = res[0];
-                        context.Stage = VoiceContext.ContextType.StageCountrySuccess;
-                        StartDialog();
-                        //...
+            StartDialog();
+            return;
 
-                    }
-                    else
-                    {
+        }
 
+        if (FuzySearch.FuzzySearchList(VoiceConst.HelpList, Text))
+        {
 
-                        context.Stage = VoiceContext.ContextType.StageCountryError;
-                        StartDialog();
+            context.Stage = VoiceContext.ContextType.Help;
+            StartDialog();
+            return;
 
-                    }
-                }
+        }
 
-                break;
+        if (context.Stage == VoiceContext.ContextType.Start || context.Stage == VoiceContext.ContextType.StartSum)
+        {
+
+            var res = FuzySearch.FuzzySearchWordInList(VoiceConst.CountryList, Text);
+            if(res != null)
+            {
+
+                context.Country = res;
+                context.Stage = VoiceContext.ContextType.StageCountrySuccess;
+
+            }
+            else
+            {
+
+                context.Stage = VoiceContext.ContextType.StageCountryError;
+
+            }
+
+            StartDialog();
+            return;
 
         }
 
@@ -55,7 +75,6 @@ static internal class VoiceController
     public static void SuccessReadText(string Text)
     {
 
-        VoiceManager.SpeechToTextAsync();
 
     }
 
@@ -80,6 +99,7 @@ static internal class VoiceController
 
         context = new VoiceContext();
         StartDialog();
+        VoiceManager.SpeechToTextAsync();
 
     }
 
@@ -103,6 +123,11 @@ static internal class VoiceController
 
                 break;
 
+            case VoiceContext.ContextType.StartSum:
+
+                VoiceManager.TextToSpeechAsync(VoiceConst.WelcomeTextSum);
+
+                break;
 
             case VoiceContext.ContextType.Help:
 
@@ -110,15 +135,33 @@ static internal class VoiceController
 
                 break;
 
+            case VoiceContext.ContextType.HelpSum:
+
+                VoiceManager.TextToSpeechAsync(VoiceConst.HelpTextSum);
+
+                break;          
+
             case VoiceContext.ContextType.StageCountrySuccess:
 
                 VoiceManager.TextToSpeechAsync(string.Format(VoiceConst.CountrySuccessText, context.Country));
 
                 break;
 
+            case VoiceContext.ContextType.StageCountrySuccessSum:
+
+                VoiceManager.TextToSpeechAsync(string.Format(VoiceConst.CountrySuccessTextSum, context.Country));
+
+                break;
+
             case VoiceContext.ContextType.StageCountryError:
 
                 VoiceManager.TextToSpeechAsync(VoiceConst.CountryErrorText);
+
+                break;
+
+            case VoiceContext.ContextType.StageCountryErrorSum:
+
+                VoiceManager.TextToSpeechAsync(VoiceConst.CountryErrorTextSum);
 
                 break;
 
