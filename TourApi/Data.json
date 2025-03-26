@@ -1,0 +1,202 @@
+﻿[
+    {
+        "Id": 1,
+        "Name": "Тур по Золотому кольцу",
+        "Description": "Увлекательное путешествие по историческим городам России.",
+        "Region": 1,
+        "AdultCount": 2,
+        "ChildCount": 1,
+        "Cost": 15000.50,
+        "ForPeopleWithDisabilities": false
+    },
+    {
+        "Id": 2,
+        "Name": "Экспедиция в Сибирь",
+        "Description": "Погружение в природу и культуру Сибири.",
+        "Region": 1,
+        "AdultCount": 1,
+        "ChildCount": 0,
+        "Cost": 25000.00,
+        "ForPeopleWithDisabilities": true
+    },
+    {
+        "Id": 3,
+        "Name": "Отдых на Черном море",
+        "Description": "Комфортабельный отдых на побережье Черного моря.",
+        "Region": 1,
+        "AdultCount": 2,
+        "ChildCount": 2,
+        "Cost": 30000.75,
+        "ForPeopleWithDisabilities": false
+    },
+    {
+        "Id": 4,
+        "Name": "Приключения в Карелии",
+        "Description": "Незабываемые моменты на природе Карелии.",
+        "Region": 1,
+        "AdultCount": 4,
+        "ChildCount": 3,
+        "Cost": 18000.99,
+        "ForPeopleWithDisabilities": false
+    },
+    {
+        "Id": 5,
+        "Name": "Парижская романтика",
+        "Description": "Исследуйте романтические уголки Парижа.",
+        "Region": 2,
+        "AdultCount": 2,
+        "ChildCount": 0,
+        "Cost": 50000.00,
+        "ForPeopleWithDisabilities": false
+    },
+    {
+        "Id": 6,
+        "Name": "Тоскана: Вино и Искусство",
+        "Description": "Погружение в культуру и гастрономию Тосканы.",
+        "Region": 3,
+        "AdultCount": 2,
+        "ChildCount": 1,
+        "Cost": 45000.00,
+        "ForPeopleWithDisabilities": false
+    },
+    {
+        "Id": 7,
+        "Name": "Солнечная Испания",
+        "Description": "Отдых на пляжах Испании.",
+        "Region": 4,
+        "AdultCount": 2,
+        "ChildCount": 2,
+        "Cost": 35000.00,
+        "ForPeopleWithDisabilities": true
+    },
+    {
+        "Id": 8,
+        "Name": "Историческая Германия",
+        "Description": "Посещение исторических мест Германии.",
+        "Region": 5,
+        "AdultCount": 1,
+        "ChildCount": 1,
+        "Cost": 40000.00,
+        "ForPeopleWithDisabilities": false
+    },
+    {
+        "Id": 9,
+        "Name": "Нидерланды: Цветы и Каналы",
+        "Description": "Исследуйте красивые каналы и цветочные поля Нидерландов.",
+        "Region": 6,
+        "AdultCount": 2,
+        "ChildCount": 0,
+        "Cost": 32000.00,
+        "ForPeopleWithDisabilities": true
+    },
+    {
+        "Id": 10,
+        "Name": "Шведская природа",
+        "Description": "Погружение в красоту шведских лесов и озёр.",
+        "Region": 7,
+        "AdultCount": 3,
+        "ChildCount": 1,
+        "Cost": 28000.00,
+        "ForPeopleWithDisabilities": false
+    },
+    {
+        "Id": 11,
+        "Name": "Греческие острова",
+        "Description": "Отдых на солнечных пляжах и исследование древних руин.",
+        "Region": 8,
+        "AdultCount": 2,
+        "ChildCount": 1,
+        "Cost": 60000.00,
+        "ForPeopleWithDisabilities": false
+    },
+    {
+        "Id": 12,
+        "Name": "Турецкие курорты",
+        "Description": "Комфортабельный отдых на побережье Турции.",
+        "Region": 9,
+        "AdultCount": 2,
+        "ChildCount": 2,
+        "Cost": 55000.00,
+        "ForPeopleWithDisabilities": true
+    },
+    {
+        "Id": 13,
+        "Name": "Прага: Город тысячи шпилей",
+        "Description": "Исследуйте исторические достопримечательности Праги.",
+        "Region": 10,
+        "AdultCount": 1,
+        "ChildCount": 1,
+        "Cost": 30000.00,
+        "ForPeopleWithDisabilities": false
+    },
+    {
+        "Id": 14,
+        "Name": "Португальская кухня и культура",
+        "Description": "Погружение в гастрономию и традиции Португалии.",
+        "Region": 11,
+        "AdultCount": 2,
+        "ChildCount": 0,
+        "Cost": 40000.00,
+        "ForPeopleWithDisabilities": true
+    },
+    {
+        "Id": 15,
+        "Name": "Ирландские пейзажи",
+        "Description": "Исследуйте живописные ландшафты и древние замки Ирландии.",
+        "Region": 12,
+        "AdultCount": 3,
+        "ChildCount": 1,
+        "Cost": 45000.00,
+        "ForPeopleWithDisabilities": false
+    },
+    {
+        "Id": 16,
+        "Name": "Австрийские Альпы",
+        "Description": "Активный отдых в горах и посещение уютных деревень.",
+        "Region": 13,
+        "AdultCount": 2,
+        "ChildCount": 2,
+        "Cost": 50000.00,
+        "ForPeopleWithDisabilities": true
+    },
+    {
+        "Id": 17,
+        "Name": "Бельгийский шоколад и пиво",
+        "Description": "Погружение в культуру и гастрономию Бельгии.",
+        "Region": 14,
+        "AdultCount": 2,
+        "ChildCount": 0,
+        "Cost": 32000.00,
+        "ForPeopleWithDisabilities": false
+    },
+    {
+        "Id": 18,
+        "Name": "Словакия: Природа и замки",
+        "Description": "Исследуйте красивые замки и природные парки Словакии.",
+        "Region": 15,
+        "AdultCount": 2,
+        "ChildCount": 1,
+        "Cost": 28000.00,
+        "ForPeopleWithDisabilities": true
+    },
+    {
+        "Id": 19,
+        "Name": "Хорватия: Адриатическое побережье",
+        "Description": "Отдых на пляжах и исследование исторических городов Хорватии.",
+        "Region": 16,
+        "AdultCount": 2,
+        "ChildCount": 2,
+        "Cost": 48000.00,
+        "ForPeopleWithDisabilities": false
+    },
+    {
+        "Id": 20,
+        "Name": "Мальта: История и море",
+        "Description": "Посещение исторических мест и отдых на пляжах Мальты.",
+        "Region": 17,
+        "AdultCount": 2,
+        "ChildCount": 0,
+        "Cost": 37000.00,
+        "ForPeopleWithDisabilities": false
+    }
+]

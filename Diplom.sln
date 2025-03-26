@@ -1,9 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35527.113 d17.12
+VisualStudioVersion = 17.12.35527.113
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Diplom", "Diplom\Diplom.csproj", "{FAA757E0-DDD3-4C1F-B9FF-393F22E8A798}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataLib", "DataLib\DataLib.csproj", "{599E5AD8-FA6B-4428-AFD2-3380F19DE394}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TourApi", "TourApi\TourApi.csproj", "{50D8509F-8D19-4D6B-B81B-581B50B7EE1E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{FAA757E0-DDD3-4C1F-B9FF-393F22E8A798}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FAA757E0-DDD3-4C1F-B9FF-393F22E8A798}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FAA757E0-DDD3-4C1F-B9FF-393F22E8A798}.Release|Any CPU.Build.0 = Release|Any CPU
+		{599E5AD8-FA6B-4428-AFD2-3380F19DE394}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{599E5AD8-FA6B-4428-AFD2-3380F19DE394}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{599E5AD8-FA6B-4428-AFD2-3380F19DE394}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{599E5AD8-FA6B-4428-AFD2-3380F19DE394}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50D8509F-8D19-4D6B-B81B-581B50B7EE1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50D8509F-8D19-4D6B-B81B-581B50B7EE1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50D8509F-8D19-4D6B-B81B-581B50B7EE1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50D8509F-8D19-4D6B-B81B-581B50B7EE1E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
