@@ -47,28 +47,13 @@ static internal class VoiceController
 
         }
 
-        if (context.Stage == VoiceContext.ContextType.Start || context.Stage == VoiceContext.ContextType.StartSum)
-        {
+        var res = ApiHandler.GetToursAsync(Text).Result;
+        VoiceManager.TextToSpeechAsync(res[0].Name + ". " + res[0].Description);
 
-            var res = FuzySearch.FuzzySearchWordInList(VoiceConst.CountryList, Text);
-            if(res != null)
-            {
+        //StartDialog();
+        return;
 
-                context.Country = res;
-                context.Stage = VoiceContext.ContextType.StageCountrySuccess;
 
-            }
-            else
-            {
-
-                context.Stage = VoiceContext.ContextType.StageCountryError;
-
-            }
-
-            StartDialog();
-            return;
-
-        }
 
     }
 

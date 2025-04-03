@@ -1,4 +1,5 @@
 ﻿using DataLib.Models;
+using DataLib.Utility;
 using Microsoft.AspNetCore.Mvc;
 
 namespace TourApi.Controllers;
@@ -12,23 +13,20 @@ public class TourController : Controller
     public ActionResult<Dictionary<int, string>> GetRegions()
     {
 
-        return DataManager.Regions;
+        return Tour.Regions;
 
     }
 
     [HttpGet]
-    public ActionResult<List<Tour>> GetTour()
+    public ActionResult<List<Tour>> Search([FromQuery] string search = "")
     {
 
-        return DataManager.Tours;
+        var data = DataManager.Tours.Where(t => t.ForPeopleWithDisabilities == true);
+        var res = FuzySearch.SearchTours(data.ToList(), search);
 
-    }
+        Console.WriteLine(res.Count);
 
-    [HttpGet("{id}")]
-    public ActionResult<Tour?> GetTour(int id)
-    {
-
-        return DataManager.Tours.Where(t => t.Id == id).FirstOrDefault();
+        return res;
 
     }
 

@@ -20,9 +20,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="Data.json">
+    <EmbeddedResource Include="Data.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
+    </EmbeddedResource>
   </ItemGroup>
 
 </Project>
