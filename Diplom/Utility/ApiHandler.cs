@@ -14,6 +14,7 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Documents;
 using DataLib.Models;
+using Diplom.VoiceEngine;
 using Newtonsoft.Json;
 
 namespace Diplom.Utility;
@@ -23,7 +24,7 @@ internal class ApiHandler
 
     private const string url = "http://127.0.0.1:5000/api/Tour?search={0}";
 
-    public static async Task<List<Tour>> GetToursAsync(string text)
+    public static async Task GetToursAsync(string text)
     {
 
         try
@@ -39,14 +40,17 @@ internal class ApiHandler
                 var jsonResponse = await response.Content.ReadAsStringAsync();
 
                 var resData = JsonConvert.DeserializeObject<List<Tour>>(jsonResponse);
-                return resData ?? new List<Tour>();
+                if (resData == null) VoiceController.onGetTourError();
+                
+                MainWindow.Singleton.onTourApiResult(resData);
+                VoiceController.onGetTourResult(resData);
 
             }
         }catch(Exception e)
         {
 
             MessageBox.Show(e.Message);
-            return new List<Tour>();
+            VoiceController.onGetTourError();
 
         }
     }

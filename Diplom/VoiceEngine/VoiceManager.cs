@@ -10,12 +10,18 @@ public static class VoiceManager
     static string speechKey = "4fLF1vtqJVOVCTLd60BdoAFVu57dbhq6iitO5HuEeJIadElMUnl3JQQJ99BCACYeBjFXJ3w3AAAYACOG1MxA";
     static string speechRegion = "eastus";
 
+    public static void StopSpeak()
+    {
+
+        speechSynthesizer?.StopSpeakingAsync();
+
+    }
+
     static void OutputSpeechRecognitionResult(SpeechRecognitionResult speechRecognitionResult)
     {
         switch (speechRecognitionResult.Reason)
         {
             case ResultReason.RecognizedSpeech:
-                speechSynthesizer?.StopSpeakingAsync();
                 VoiceController.SuccessGetText(speechRecognitionResult.Text);
                 break;
             case ResultReason.Canceled:

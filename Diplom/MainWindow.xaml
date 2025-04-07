@@ -8,5 +8,71 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
 
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="70"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Button
+            x:Name="SupportButton"
+            Grid.Row="0"
+            Grid.Column="2"
+            FontSize="14"
+            FontWeight="Black"
+            Margin="7">
+            Техническая поддержка
+        </Button>
+
+        <Label
+            Grid.Row="1"
+            Grid.Column="0"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Right"
+            Margin="5"
+            FontSize="14"
+            FontWeight="Black">
+            Поиск:
+        </Label>
+
+        <TextBox
+            x:Name="SearchText"
+            Grid.Row="1"
+            Grid.Column="1"
+            VerticalAlignment="Center"
+            Margin="5"
+            Padding="3"
+            FontSize="14"
+            FontWeight="Black"/>
+
+        <Button
+            x:Name="SearchButton"
+            Grid.Row="1"
+            Grid.Column="2"
+            Padding="25 10"
+            FontSize="14"
+            FontWeight="Black"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Center">
+            Искать
+        </Button>
+
+        <ListView
+            x:Name="DataListView"
+            Grid.Row="2"
+            Grid.Column="0"
+            Grid.ColumnSpan="3"
+            HorizontalContentAlignment="Stretch">
+            
+            
+            
+        </ListView>
+        
     </Grid>
 </Window>

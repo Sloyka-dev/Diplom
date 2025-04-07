@@ -12,13 +12,14 @@ static class VoiceConst
     public const string WelcomeTextSum = "Это короткое объяснение.";
     public const string HelpText = "Тут должно быть длинное объяснение, как программа работает. Но это помощь.";
     public const string HelpTextSum = "Это короткая помощь.";
-    public const string CountrySuccessText = "Страна, которую вы выбрали, - {0}.";
-    public const string CountrySuccessTextSum = "{0}.";
-    public const string CountryErrorText = "Программа вас не расслышала, повторите или скажите помощь.";
-    public const string CountryErrorTextSum = "Мы вас не расслышали..";
+    public const string SearchSuccessFirstText = "По вашему запросу найдено {0} туров.";
+    public const string SearchSuccessText = "{0}. {1}. Тур расчитан на {2} взрослых и {3} детей. Стоимость тура {4} рублей.";
+    public const string SearchErrorText = "Программа вас не расслышала, повторите или скажите помощь.";
 
-    public static readonly List<string> SkipList = new() { "пропуск", "пропустить", "дальше" };
+    public static readonly List<string> SkipList = new() { "пропуск", "пропустить" };
     public static readonly List<string> HelpList = new() { "помощь", "помоги" };
+    public static readonly List<string> NextList = new() { "дальше", "следующий" };
+    public static readonly List<string> PreviousList = new() { "назад", "предыдущий" };
     public static readonly List<string> CountryList;
 
 }
