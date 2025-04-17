@@ -21,11 +21,11 @@ public class VoiceContext
     {
 
         Start,
-        StartSum,
         Help,
-        HelpSum,
+        Regions,
         SearchFirstSuccess,
         SearchSuccess,
+        Order,
         SearchError
 
     }

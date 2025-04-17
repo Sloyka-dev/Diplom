@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using System.Diagnostics;
+using System.Windows;
 using DataLib.Models;
 using Diplom.Utility;
 using static System.Net.Mime.MediaTypeNames;
@@ -15,21 +16,6 @@ static internal class VoiceController
         {
 
             VoiceManager.StopSpeak();
-
-            switch (context.Stage)
-            {
-
-                case VoiceContext.ContextType.Start:
-                    context.Stage = VoiceContext.ContextType.StartSum;
-                    break;
-
-                case VoiceContext.ContextType.Help:
-                    context.Stage = VoiceContext.ContextType.HelpSum;
-                    break;
-                    
-            }
-
-            StartDialog();
             return;
 
         }
@@ -43,10 +29,34 @@ static internal class VoiceController
 
         }
 
+        if (FuzySearch.FuzzySearchList(VoiceConst.RegionList, Text))
+        {
+
+            context.Stage = VoiceContext.ContextType.Regions;
+            StartDialog();
+            return;
+
+        }
+
+        if (FuzySearch.FuzzySearchList(VoiceConst.OrderList, Text))
+        {
+
+            OrderTour(context.CurrentTour);
+            return;
+
+        }
+
+        if (FuzySearch.FuzzySearchList(VoiceConst.RepeatList, Text))
+        {
+
+            StartDialog();
+            return;
+
+        }
+
         if (FuzySearch.FuzzySearchList(VoiceConst.NextList, Text))
         {
 
-            VoiceManager.StopSpeak();
             if (context.CurrentItemNum + 1 < context.SearchResult.Count) 
                 context.CurrentItemNum++;
             StartDialog();
@@ -57,7 +67,6 @@ static internal class VoiceController
         if (FuzySearch.FuzzySearchList(VoiceConst.PreviousList, Text))
         {
 
-            VoiceManager.StopSpeak();
             if (context.CurrentItemNum > 0)
                 context.CurrentItemNum--;
             StartDialog();
@@ -71,6 +80,16 @@ static internal class VoiceController
 
         ApiHandler.GetToursAsync(Text);
         return;
+
+    }
+
+    public static void OrderTour(Tour tour)
+    {
+
+        context.Stage = VoiceContext.ContextType.Order;
+        new HelpWindow(VoiceConst.HelpWindowTourText, tour.Name);
+        Process.Start(new ProcessStartInfo(tour.URL) { UseShellExecute = true });
+        StartDialog();
 
     }
 
@@ -88,7 +107,7 @@ static internal class VoiceController
 
         VoiceManager.StopSpeak();
         context.SearchResult = tours;
-        context.Stage = VoiceContext.ContextType.SearchFirstSuccess;
+        context.Stage = tours.Count == 0 ? VoiceContext.ContextType.SearchError : VoiceContext.ContextType.SearchFirstSuccess;
         StartDialog();
 
     }
@@ -147,6 +166,7 @@ static internal class VoiceController
     static void StartDialog()
     {
 
+        VoiceManager.StopSpeak();
         switch (context.Stage)
         {
 
@@ -156,21 +176,15 @@ static internal class VoiceController
 
                 break;
 
-            case VoiceContext.ContextType.StartSum:
-
-                VoiceManager.TextToSpeechAsync(VoiceConst.WelcomeTextSum);
-
-                break;
-
             case VoiceContext.ContextType.Help:
 
                 VoiceManager.TextToSpeechAsync(VoiceConst.HelpText);
 
                 break;
 
-            case VoiceContext.ContextType.HelpSum:
+            case VoiceContext.ContextType.Regions:
 
-                VoiceManager.TextToSpeechAsync(VoiceConst.HelpTextSum);
+                VoiceManager.TextToSpeechAsync(VoiceConst.RegionListText);
 
                 break;
 
@@ -185,9 +199,8 @@ static internal class VoiceController
                 var current = context.CurrentTour;
                 VoiceManager.TextToSpeechAsync(string.Format(VoiceConst.SearchSuccessText, 
                     current.Name, 
-                    current.Description, 
-                    current.AdultCount, 
-                    current.ChildCount, 
+                    current.Description,
+                    Tour.Regions[current.Region],
                     current.Cost));
 
                 break;
@@ -198,6 +211,11 @@ static internal class VoiceController
 
                 break;
 
+            case VoiceContext.ContextType.Order:
+
+                VoiceManager.TextToSpeechAsync(string.Format(VoiceConst.HelpWindowTourText, context.CurrentTour.Name));
+
+                break;
 
         }
 

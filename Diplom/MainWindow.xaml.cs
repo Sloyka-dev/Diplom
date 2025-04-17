@@ -41,11 +41,13 @@ namespace Diplom
             foreach (var item in tours)
             {
 
-                DataListView.Items.Add(new DataListElement(item));
+                var element = new DataListElement(item);
+                DataListView.Items.Add(element);
 
             }
 
         }
+
 
         public void onVoiceSearch(string text)
         {
@@ -66,7 +68,7 @@ namespace Diplom
         private void SupportButton_Click(object sender, RoutedEventArgs e)
         {
 
-
+            new HelpWindow();
 
         }
     }

@@ -49,8 +49,10 @@ internal class ApiHandler
         }catch(Exception e)
         {
 
+#if !RELEASE
             MessageBox.Show(e.Message);
             VoiceController.onGetTourError();
+#endif
 
         }
     }

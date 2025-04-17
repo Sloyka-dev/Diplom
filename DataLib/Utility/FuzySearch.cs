@@ -69,7 +69,7 @@ public class FuzySearch
 
         var srRes = rating.Keys.Average();
         foreach (var key in rating.Keys.Order())
-            if (key > srRes)
+            if (key > srRes && key >= 1_000)
                 list.Add(rating[key]);
 
         return list;

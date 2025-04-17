@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using DataLib.Models;
+using Diplom.VoiceEngine;
 
 namespace Diplom
 {
@@ -31,8 +32,17 @@ namespace Diplom
             this.tour = tour;
 
             NameLabel.Content = tour.Name;
-            DescLabel.Content = tour.Description;
-            PriceLabel.Content = tour.Cost + "₽";
+            DescLabel.Content = Tour.Regions[tour.Region];
+            PriceLabel.Content = tour.Cost + "₽ ночь";
+
+            MouseUp += DataListElement_MouseUp;
+
+        }
+
+        private void DataListElement_MouseUp(object sender, MouseButtonEventArgs e)
+        {
+
+            VoiceController.OrderTour(tour);
 
         }
     }

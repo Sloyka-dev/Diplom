@@ -1,0 +1,40 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 YaBrowser/25.2.0.0 Safari/537.36" version="26.2.13">
+  <diagram name="Страница — 1" id="djJSQ3nxndLWZxcKEAUQ">
+    <mxGraphModel dx="1428" dy="764" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="UXlf8kw522KNsLcBJd1m-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="140" width="500" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="UXlf8kw522KNsLcBJd1m-5" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="UXlf8kw522KNsLcBJd1m-2" target="UXlf8kw522KNsLcBJd1m-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UXlf8kw522KNsLcBJd1m-8" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="UXlf8kw522KNsLcBJd1m-2" target="UXlf8kw522KNsLcBJd1m-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UXlf8kw522KNsLcBJd1m-2" value="Пользователь" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="230" y="210" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UXlf8kw522KNsLcBJd1m-6" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="UXlf8kw522KNsLcBJd1m-3" target="UXlf8kw522KNsLcBJd1m-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UXlf8kw522KNsLcBJd1m-3" value="Искать туры" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="370" y="170" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="UXlf8kw522KNsLcBJd1m-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="UXlf8kw522KNsLcBJd1m-4" target="UXlf8kw522KNsLcBJd1m-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UXlf8kw522KNsLcBJd1m-4" value="Выбирать тур" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="530" y="170" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="UXlf8kw522KNsLcBJd1m-7" value="Обращаться в тех. поддержку" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="370" y="240" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="UXlf8kw522KNsLcBJd1m-9" value="Оформлять тур" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="690" y="170" width="120" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

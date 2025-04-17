@@ -1,202 +1,386 @@
 ﻿[
     {
         "Id": 1,
-        "Name": "Тур по Золотому кольцу",
-        "Description": "Увлекательное путешествие по историческим городам России.",
+        "Name": "Armas Gul Beach Hotel",
+        "Description": "Отель очень удобно расположен в самом начале города Кемер. В удалении от городской суеты, но в то же время близко к центру города и в пешей доступности от развлечений и дискотек.",
         "Region": 1,
-        "AdultCount": 2,
-        "ChildCount": 1,
-        "Cost": 15000.50,
-        "ForPeopleWithDisabilities": false
+        "Cost": 8984,
+        "URL": "https://yandex.level.travel/hotels/9067545-Armas_Gul_Beach_Hotel",
+        "ForPeopleWithDisabilities": true
     },
     {
         "Id": 2,
-        "Name": "Экспедиция в Сибирь",
-        "Description": "Погружение в природу и культуру Сибири.",
-        "Region": 1,
-        "AdultCount": 1,
-        "ChildCount": 0,
-        "Cost": 25000.00,
+        "Name": "A Good Life Utopia Family Resort (Ex. Water Planet)",
+        "Description": "Отель расположен на берегу моря в окружении пышной зелени естественных лесов. Это самый большой центр развлечений и аквапарк на Средиземноморском побережье, включающий множество аттракционов, горки, бассейны с вышками и искусственный рафтинг. Отель подходит для отдыха как семей с детьми, так и для молодежи.",
+        "Region": 2,
+        "Cost": 13772,
+        "URL": "https://yandex.level.travel/hotels/9015524-A_Good_Life_Utopia_Family_Resort_Ex_Water_Planet",
         "ForPeopleWithDisabilities": true
     },
     {
         "Id": 3,
-        "Name": "Отдых на Черном море",
-        "Description": "Комфортабельный отдых на побережье Черного моря.",
-        "Region": 1,
-        "AdultCount": 2,
-        "ChildCount": 2,
-        "Cost": 30000.75,
-        "ForPeopleWithDisabilities": false
+        "Name": "Club Hotel Sera",
+        "Description": "Песчаный вход в море, что редко для отелей, расположенных в самой Анталье. Оригинальная зеленая территория. На территории отеля расположен популярный ювелирный магазин.",
+        "Region": 3,
+        "Cost": 22408,
+        "URL": "https://yandex.level.travel/hotels/14797-Club_Hotel_Sera",
+        "ForPeopleWithDisabilities": true
     },
     {
         "Id": 4,
-        "Name": "Приключения в Карелии",
-        "Description": "Незабываемые моменты на природе Карелии.",
-        "Region": 1,
-        "AdultCount": 4,
-        "ChildCount": 3,
-        "Cost": 18000.99,
-        "ForPeopleWithDisabilities": false
+        "Name": "Rixos Park Belek",
+        "Description": "Новый курортный отель на берегу моря. На территории есть несколько бассейнов, детский клуб с богатой анимационной программой, спа-центр. Предлагается разнообразное питание, ряд блюд и напитков доступны круглосуточно. Широкий выбор спортивно-развлекательных мероприятий. Рекомендуется для высококлассного семейного отдыха.",
+        "Region": 4,
+        "Cost": 23047,
+        "URL": "https://yandex.level.travel/hotels/9133387-Rixos_Park_Belek",
+        "ForPeopleWithDisabilities": true
     },
     {
         "Id": 5,
-        "Name": "Парижская романтика",
-        "Description": "Исследуйте романтические уголки Парижа.",
+        "Name": "Justiniano Club Park Conti",
+        "Description": "Очень уютная, утопающая в зелени территория, по которой разбросаны невысокие домики-бунгало. На территории много лестниц и ступенек. Отель ориентирован на семейный отдых. Хороший пляж.",
         "Region": 2,
-        "AdultCount": 2,
-        "ChildCount": 0,
-        "Cost": 50000.00,
-        "ForPeopleWithDisabilities": false
+        "Cost": 13030,
+        "URL": "https://yandex.level.travel/hotels/7001661-Justiniano_Club_Park_Conti",
+        "ForPeopleWithDisabilities": true
     },
     {
         "Id": 6,
-        "Name": "Тоскана: Вино и Искусство",
-        "Description": "Погружение в культуру и гастрономию Тосканы.",
-        "Region": 3,
-        "AdultCount": 2,
-        "ChildCount": 1,
-        "Cost": 45000.00,
-        "ForPeopleWithDisabilities": false
+        "Name": "Utopia World Hotel",
+        "Description": "Уютный озелененный отель расположен на холме, с которого открывается красивый вид. Спуститься к пляжу можно на лифте или на транспорте, который ходит каждые 15 минут. Аквапарк, расположенный в хвойном лесу, утопающий в зелени, предлагает 8 горок для взрослых, 4 горки для детей, водные горки, расположенные рядом с ландшафтной террасой, предлагают гостям быстрый способ охладиться и приятно провести время. Для спокойного семейного отдыха.",
+        "Region": 2,
+        "Cost": 17248,
+        "URL": "https://yandex.level.travel/hotels/165008-Utopia_World_Hotel",
+        "ForPeopleWithDisabilities": true
     },
     {
         "Id": 7,
-        "Name": "Солнечная Испания",
-        "Description": "Отдых на пляжах Испании.",
-        "Region": 4,
-        "AdultCount": 2,
-        "ChildCount": 2,
-        "Cost": 35000.00,
+        "Name": "Lonicera World Hotel",
+        "Description": "Состоит из двух отелей Lonicera World и Lonicera Resort&SPA. Отель находится на первой береговой линии Средиземного моря, в живописном месте Тюрклер, в бухте Фугла, имеет собственный мелководный песчаный пляж. Торговый центр находится в нескольких минутах ходьбы, транспорт легко предоставляется в виде такси или микроавтобуса. Отель состоит из трех, четырех и пятиэтажных зданий, большого ухоженного сада, мини-зоопарка, торговых центров, по всей территории отеля действует бесплатный Wi-Fi. На протяжении всего отдыха предлагается обслуживание самого высокого класса для всех отдыхающих.",
+        "Region": 2,
+        "Cost": 12360,
+        "URL": "https://yandex.level.travel/hotels/9000865-Lonicera_World_Hotel",
         "ForPeopleWithDisabilities": true
     },
     {
         "Id": 8,
-        "Name": "Историческая Германия",
-        "Description": "Посещение исторических мест Германии.",
-        "Region": 5,
-        "AdultCount": 1,
-        "ChildCount": 1,
-        "Cost": 40000.00,
-        "ForPeopleWithDisabilities": false
+        "Name": "Kremlin Palace (Ex.Asteria Kremlin Palace)",
+        "Description": "Отель ориентирован на российского туриста, архитектура напоминает Красную площадь в Москве. Большая зеленая территория, активная дневная и вечерняя анимация. Рекомендуем для семейного отдыха с детьми.",
+        "Region": 3,
+        "Cost": 16046,
+        "URL": "https://yandex.level.travel/hotels/9013688-Kremlin_Palace_Ex_Asteria_Kremlin_Palace",
+        "ForPeopleWithDisabilities": true
     },
     {
         "Id": 9,
-        "Name": "Нидерланды: Цветы и Каналы",
-        "Description": "Исследуйте красивые каналы и цветочные поля Нидерландов.",
-        "Region": 6,
-        "AdultCount": 2,
-        "ChildCount": 0,
-        "Cost": 32000.00,
-        "ForPeopleWithDisabilities": true
+        "Name": "Sunset Beach Resort",
+        "Description": "Отель расположен на живописном побережье с великолепным видом на закат. Идеальное место для романтического отдыха и семейных каникул.",
+        "Region": 1,
+        "Cost": 10501,
+        "URL": "https://yandex.level.travel/hotels/1234567-Sunset_Beach_Resort",
+        "ForPeopleWithDisabilities": false
     },
+
     {
         "Id": 10,
-        "Name": "Шведская природа",
-        "Description": "Погружение в красоту шведских лесов и озёр.",
-        "Region": 7,
-        "AdultCount": 3,
-        "ChildCount": 1,
-        "Cost": 28000.00,
+        "Name": "Ocean Paradise Hotel",
+        "Description": "Современный отель с удобствами для всей семьи, включая аквапарк и спа-салон. Находится в окружении тропической зелени.",
+        "Region": 2,
+        "Cost": 15067,
+        "URL": "https://yandex.level.travel/hotels/2345678-Ocean_Paradise_Hotel",
         "ForPeopleWithDisabilities": false
     },
+
     {
         "Id": 11,
-        "Name": "Греческие острова",
-        "Description": "Отдых на солнечных пляжах и исследование древних руин.",
-        "Region": 8,
-        "AdultCount": 2,
-        "ChildCount": 1,
-        "Cost": 60000.00,
+        "Name": "Royal Antalya Hotel",
+        "Description": "Элегантный отель с роскошными номерами и разнообразными ресторанами. Прямой доступ к пляжу и множество развлечений.",
+        "Region": 3,
+        "Cost": 20450,
+        "URL": "https://yandex.level.travel/hotels/3456789-Royal_Antalya_Hotel",
         "ForPeopleWithDisabilities": false
     },
+
     {
         "Id": 12,
-        "Name": "Турецкие курорты",
-        "Description": "Комфортабельный отдых на побережье Турции.",
-        "Region": 9,
-        "AdultCount": 2,
-        "ChildCount": 2,
-        "Cost": 55000.00,
-        "ForPeopleWithDisabilities": true
+        "Name": "Green Valley Resort",
+        "Description": "Отель, окруженный зелеными холмами, предлагает спокойный отдых и множество активных развлечений для гостей всех возрастов.",
+        "Region": 4,
+        "Cost": 12010,
+        "URL": "https://yandex.level.travel/hotels/4567890-Green_Valley_Resort",
+        "ForPeopleWithDisabilities": false
     },
     {
         "Id": 13,
-        "Name": "Прага: Город тысячи шпилей",
-        "Description": "Исследуйте исторические достопримечательности Праги.",
-        "Region": 10,
-        "AdultCount": 1,
-        "ChildCount": 1,
-        "Cost": 30000.00,
+        "Name": "Crystal Blue Hotel",
+        "Description": "Отель с великолепным видом на море и собственным пляжем. Идеальное место для отдыха и водных видов спорта.",
+        "Region": 1,
+        "Cost": 11534,
+        "URL": "https://yandex.level.travel/hotels/5678901-Crystal_Blue_Hotel",
         "ForPeopleWithDisabilities": false
     },
+
     {
         "Id": 14,
-        "Name": "Португальская кухня и культура",
-        "Description": "Погружение в гастрономию и традиции Португалии.",
-        "Region": 11,
-        "AdultCount": 2,
-        "ChildCount": 0,
-        "Cost": 40000.00,
-        "ForPeopleWithDisabilities": true
-    },
-    {
-        "Id": 15,
-        "Name": "Ирландские пейзажи",
-        "Description": "Исследуйте живописные ландшафты и древние замки Ирландии.",
-        "Region": 12,
-        "AdultCount": 3,
-        "ChildCount": 1,
-        "Cost": 45000.00,
+        "Name": "Tropical Garden Resort",
+        "Description": "Уютный отель с ухоженной территорией и бассейном. Подходит для семейного отдыха и романтических поездок.",
+        "Region": 2,
+        "Cost": 9801,
+        "URL": "https://yandex.level.travel/hotels/6789012-Tropical_Garden_Resort",
         "ForPeopleWithDisabilities": false
     },
+
+    {
+        "Id": 15,
+        "Name": "Luxury Bay Hotel",
+        "Description": "Роскошный отель с высококлассным обслуживанием и разнообразными ресторанами. Прямой доступ к пляжу и множество развлечений.",
+        "Region": 3,
+        "Cost": 25031,
+        "URL": "https://yandex.level.travel/hotels/7890123-Luxury_Bay_Hotel",
+        "ForPeopleWithDisabilities": false
+    },
+
     {
         "Id": 16,
-        "Name": "Австрийские Альпы",
-        "Description": "Активный отдых в горах и посещение уютных деревень.",
-        "Region": 13,
-        "AdultCount": 2,
-        "ChildCount": 2,
-        "Cost": 50000.00,
-        "ForPeopleWithDisabilities": true
+        "Name": "Mountain View Resort",
+        "Description": "Отель, расположенный в горах, предлагает потрясающие виды и множество активных развлечений на свежем воздухе.",
+        "Region": 4,
+        "Cost": 13556,
+        "URL": "https://yandex.level.travel/hotels/8901234-Mountain_View_Resort",
+        "ForPeopleWithDisabilities": false
     },
     {
         "Id": 17,
-        "Name": "Бельгийский шоколад и пиво",
-        "Description": "Погружение в культуру и гастрономию Бельгии.",
-        "Region": 14,
-        "AdultCount": 2,
-        "ChildCount": 0,
-        "Cost": 32000.00,
-        "ForPeopleWithDisabilities": false
+        "Name": "ГК Бархатные Сезоны (Спортивный Квартал)",
+        "Description": "«Спортивный квартал» является частью города-отеля «Бархатные сезоны». Галечный пляж в шаговой доступности. Прекрасный вариант размещения для любителей активного отдыха! На территории квартала гостей ждут футбольные поля, площадки для баскетбола, волейбола, мини-гольфа и других видов спорта. Расположение в каждом квартале самых необходимых объектов инфраструктуры обеспечивает комфортный формат отдыха круглый год.",
+        "Region": 5,
+        "Cost": 25020,
+        "URL": "https://yandex.level.travel/hotels/9069464-GK_Barkhatnye_Sezony_Sportivnyj_Kvartal",
+        "ForPeopleWithDisabilities": true
     },
     {
         "Id": 18,
-        "Name": "Словакия: Природа и замки",
-        "Description": "Исследуйте красивые замки и природные парки Словакии.",
-        "Region": 15,
-        "AdultCount": 2,
-        "ChildCount": 1,
-        "Cost": 28000.00,
+        "Name": "Оздоровительный Комплекс Дивный",
+        "Description": "Семейный отель, утопающий в зелени субтропических растений. Расположен в тихом месте и предлагает провести незабываемый отдых на море. Гостей ждут уютные номера, а также лечебно-оздоровительный спа-центр.",
+        "Region": 5,
+        "Cost": 22540,
+        "URL": "https://yandex.level.travel/hotels/9097709-Ozdorovitelnyj_Kompleks_Divnyj",
         "ForPeopleWithDisabilities": true
     },
     {
         "Id": 19,
-        "Name": "Хорватия: Адриатическое побережье",
-        "Description": "Отдых на пляжах и исследование исторических городов Хорватии.",
-        "Region": 16,
-        "AdultCount": 2,
-        "ChildCount": 2,
-        "Cost": 48000.00,
-        "ForPeopleWithDisabilities": false
+        "Name": "Гостевой дом Милана",
+        "Description": "Гостевой дом с уютной домашней обстановкой и ненавязчивым сервисом",
+        "Region": 5,
+        "Cost": 24332,
+        "URL": "https://yandex.level.travel/hotels/9112819-Gostevoj_dom_Milana",
+        "ForPeopleWithDisabilities": true
     },
     {
         "Id": 20,
-        "Name": "Мальта: История и море",
-        "Description": "Посещение исторических мест и отдых на пляжах Мальты.",
-        "Region": 17,
-        "AdultCount": 2,
-        "ChildCount": 0,
-        "Cost": 37000.00,
+        "Name": "Эллинг Солнечный",
+        "Description": "Гостевой дом расположен на берегу моря в курортном микрорайоне Лоо, в нескольких шагах от пляжа Лоо и менее чем в 1 км от пляжа Горный воздух. Стойка регистрации работает круглосуточно. На всей территории работает бесплатный Wi-Fi. Гости могут воспользоваться общей кухней и услугой трансфера от/до аэропорта.",
+        "Region": 5,
+        "Cost": 23677,
+        "URL": "https://yandex.level.travel/hotels/9087352-Elling_Solnechnyj",
+        "ForPeopleWithDisabilities": true
+    },
+    {
+        "Id": 21,
+        "Name": "Отель Достоевский",
+        "Description": "Отель в здании в стиле модерн на Владимирской площади, в 5 минутах ходьбы от Невского проспекта в Санкт-Петербурге.",
+        "Region": 6,
+        "Cost": 19731,
+        "URL": "https://yandex.level.travel/hotels/9046072-Otel_Dostoevskij",
+        "ForPeopleWithDisabilities": true
+    },
+    {
+        "Id": 22,
+        "Name": "Гостиница Жемчужина Балтики",
+        "Description": "Уютная мини-гостиница в центре города. Гостей ждут классические номера, атмосфера домашнего уюта и пляж в 20 минутах.",
+        "Region": 7,
+        "Cost": 28174,
+        "URL": "https://yandex.level.travel/hotels/9098411-Gostinitsa_Zhemchuzhina_Baltiki",
+        "ForPeopleWithDisabilities": true
+    },
+    {
+        "Id": 23,
+        "Name": "Стрелецкий Гостевой Дом",
+        "Description": "Отель в нескольких минутах ходьбы от Королевских ворот в Калининграде.",
+        "Region": 7,
+        "Cost": 28436,
+        "URL": "https://yandex.level.travel/hotels/9048394-Streletskij_Gostevoj_Dom",
+        "ForPeopleWithDisabilities": true
+    },
+    {
+        "Id": 24,
+        "Name": "Kempf Nevsky",
+        "Description": "Видовой отель в историческом центре Санкт-Петербурга, на углу Невского проспекта и Малой Конюшенной улицы с потрясающим видом на Казанский собор. Каждый номер уникален интерьером в современном стиле. Из большинства из них открывается роскошный панорамный вид на Казанский собор, а также на пешеходную зону Малой Конюшенной улицы. Местоположение отеля в центре культурной и деловой жизни города позволяет спланировать как деловое, так и туристическое путешествие и провести незабываемое время в Северной столице.",
+        "Region": 7,
+        "Cost": 21415,
+        "URL": "https://yandex.level.travel/hotels/9126715-Kempf_Nevsky",
+        "ForPeopleWithDisabilities": true
+    },
+    {
+        "Id": 25,
+        "Name": "Отель Эра Спа",
+        "Description": "Спа-отель в поселке Большое Исаково, в пригороде Калининграда.",
+        "Region": 7,
+        "Cost": 28417,
+        "URL": "https://yandex.level.travel/hotels/9046873-Otel_Era_Spa",
+        "ForPeopleWithDisabilities": true
+    },
+    {
+        "Id": 26,
+        "Name": "Boutique Hotel Academia Vasilievsky (Академиа Васильевский)",
+        "Description": "Очаровательный бутик-отель на Васильевском острове, в пешей доступности от двух садов, Кунсткамеры и других достопримечательностей. Гостей ждут стильные номера с мини-кухней и кафе.",
+        "Region": 6,
+        "Cost": 23231,
+        "URL": "https://yandex.level.travel/hotels/9104790-Boutique_Hotel_Academia_Vasilievsky_akademia_vasilievskij",
+        "ForPeopleWithDisabilities": true
+    },
+    {
+        "Id": 27,
+        "Name": "Гостевой дом Уют",
+        "Description": "Уютный гостевой дом с комфортными номерами и дружелюбным обслуживанием. Находится в центре курортного района.",
+        "Region": 5,
+        "Cost": 18545,
+        "URL": "https://yandex.level.travel/hotels/9123456-Gostevoj_dom_Ujut",
+        "ForPeopleWithDisabilities": false
+    },
+    {
+        "Id": 28,
+        "Name": "Отель Лазурный",
+        "Description": "Современный отель с видом на море, предлагает разнообразные услуги для отдыхающих, включая спа и бассейн.",
+        "Region": 5,
+        "Cost": 27580,
+        "URL": "https://yandex.level.travel/hotels/9123457-Otel_Lazurnyj",
+        "ForPeopleWithDisabilities": false
+    },
+    {
+        "Id": 29,
+        "Name": "Гостиница Невский",
+        "Description": "Комфортабельная гостиница в центре Санкт-Петербурга, рядом с главными достопримечательностями города.",
+        "Region": 6,
+        "Cost": 19525,
+        "URL": "https://yandex.level.travel/hotels/9123458-Gostinitsa_Nevskij",
+        "ForPeopleWithDisabilities": false
+    },
+    {
+        "Id": 30,
+        "Name": "Отель Балтика",
+        "Description": "Уютный отель с классическими номерами и рестораном, расположенный в живописном районе города.",
+        "Region": 7,
+        "Cost": 31015,
+        "URL": "https://yandex.level.travel/hotels/9123459-Otel_Baltika",
+        "ForPeopleWithDisabilities": false
+    },
+    {
+        "Id": 31,
+        "Name": "Гостевой дом Солнечный",
+        "Description": "Уютный гостевой дом с прекрасным видом на море и дружелюбным персоналом. Идеально подходит для семейного отдыха.",
+        "Region": 5,
+        "Cost": 19875,
+        "URL": "https://yandex.level.travel/hotels/9123460-Gostevoj_dom_Solnechnyj",
+        "ForPeopleWithDisabilities": false
+    },
+    {
+        "Id": 32,
+        "Name": "Отель Золотой Берег",
+        "Description": "Современный отель с комфортными номерами и разнообразными услугами, включая фитнес-центр и спа.",
+        "Region": 6,
+        "Cost": 24530,
+        "URL": "https://yandex.level.travel/hotels/9123461-Otel_Zolotoy_Bereg",
+        "ForPeopleWithDisabilities": false
+    },
+    {
+        "Id": 33,
+        "Name": "Гостиница Летний Сад",
+        "Description": "Уютная гостиница в центре города с атмосферой домашнего уюта и внимательным обслуживанием.",
+        "Region": 7,
+        "Cost": 28945,
+        "URL": "https://yandex.level.travel/hotels/9123462-Gostinitsa_Letnij_Sad",
+        "ForPeopleWithDisabilities": false
+    },
+    {
+        "Id": 34,
+        "Name": "Отель Сказка",
+        "Description": "Комфортабельный отель с уникальным дизайном и разнообразными услугами для отдыхающих.",
+        "Region": 7,
+        "Cost": 31280,
+        "URL": "https://yandex.level.travel/hotels/9123463-Otel_Skazka",
+        "ForPeopleWithDisabilities": false
+    },
+    {
+        "Id": 35,
+        "Name": "Гостиница Вояж",
+        "Description": "Небольшой отель и прекрасный вариант для комфортабельного размещения по доступной цене. Гостей ждут светлые и уютные номера в классическом стиле и внимательный персонал.",
+        "Region": 8,
+        "Cost": 32458,
+        "URL": "https://yandex.level.travel/hotels/9068457-Gostinitsa_Voyazh",
+        "ForPeopleWithDisabilities": true
+    },
+    {
+        "Id": 36,
+        "Name": "Отель Sport Time",
+        "Description": "Современный комфортабельный отель предлагает простые светлые номера и качественный сервис. Подходит для спортсменов, экскурсий и отдыха.",
+        "Region": 8,
+        "Cost": 31227,
+        "URL": "https://yandex.level.travel/hotels/9026886-otel_Sport_Time",
+        "ForPeopleWithDisabilities": true
+    },
+    {
+        "Id": 37,
+        "Name": "Отель Монастырский",
+        "Description": "Оригинальный отель в историческом центре города, в шаговой доступности от основных достопримечательностей. Здание отеля построено в 1852 году и является историко-культурным достоянием, интерьер выполнен в стиле монастыря: массивная деревянная мебель, закрывающиеся ставни на окнах, сводчатые потолки, толстые стены – все это создает особую атмосферу.",
+        "Region": 8,
+        "Cost": 37065,
+        "URL": "https://yandex.level.travel/hotels/9071160-Otel_Monastyrskij",
+        "ForPeopleWithDisabilities": true
+    },
+    {
+        "Id": 38,
+        "Name": "Отель East Time",
+        "Description": "Современный комфортабельный отель, построенный к чемпионату мира по хоккею, предлагает светлые уютные номера и качественный сервис. Подходит для экскурсионной поездки и бюджетного отдыха.",
+        "Region": 8,
+        "Cost": 31227,
+        "URL": "https://yandex.level.travel/hotels/9026888-otel_East_Time",
+        "ForPeopleWithDisabilities": true
+    },
+    {
+        "Id": 39,
+        "Name": "Гостиница Сити",
+        "Description": "Современный отель с удобным расположением в центре города. Гостям предлагаются комфортабельные номера и высокий уровень сервиса.",
+        "Region": 8,
+        "Cost": 28945,
+        "URL": "https://yandex.level.travel/hotels/9087654-Gostinitsa_Siti",
+        "ForPeopleWithDisabilities": false
+    },
+    {
+        "Id": 40,
+        "Name": "Отель Премьер",
+        "Description": "Элегантный отель с современными удобствами и рестораном на крыше, предлагающим панорамный вид на город.",
+        "Region": 8,
+        "Cost": 35678,
+        "URL": "https://yandex.level.travel/hotels/9087655-Otel_Premier",
+        "ForPeopleWithDisabilities": false
+    },
+    {
+        "Id": 41,
+        "Name": "Гостиница Орион",
+        "Description": "Уютная гостиница с домашней атмосферой и внимательным персоналом. Идеально подходит для деловых поездок и отдыха.",
+        "Region": 8,
+        "Cost": 24567,
+        "URL": "https://yandex.level.travel/hotels/9087656-Gostinitsa_Orion",
+        "ForPeopleWithDisabilities": false
+    },
+    {
+        "Id": 42,
+        "Name": "Отель Звезда",
+        "Description": "Комфортабельный отель с разнообразными услугами, включая фитнес-центр и спа. Удобное расположение в центре Минска.",
+        "Region": 8,
+        "Cost": 31245,
+        "URL": "https://yandex.level.travel/hotels/9087657-Otel_Zvezda",
         "ForPeopleWithDisabilities": false
     }
 ]
